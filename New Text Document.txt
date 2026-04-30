@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixtyFour RP | البداية الجديدة</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #050505;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* الهيدر */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0,0,0,0.8);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: #fff; }
+
+        /* قسم البطولة (Hero Section) */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3), #050505), 
+                        url('https://images.wallpapersden.com/image/download/gta-5-4k-cool-art_bWlpZ2mUmZqaraWkpJRmbmdlrWZnZWU.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 80px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #bbb;
+            max-width: 600px;
+        }
+
+        .btn-join {
+            margin-top: 30px;
+            padding: 15px 40px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn-join:hover {
+            background-color: #ccc;
+            transform: scale(1.05);
+        }
+
+        /* قسم الإحصائيات */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 50px;
+            background: #0a0a0a;
+        }
+
+        .stat-item h3 { font-size: 40px; margin: 0; }
+        .stat-item p { color: #888; }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SIXTYFOUR STUDIOS</div>
+        <nav>
+            <a href="#">الرئيسية</a>
+            <a href="#">المتجر</a>
+            <a href="#">القوانين</a>
+            <a href="#">الدعم الفني</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>SixtyFour</h1>
+        <p>تجربة الـ Roleplay الأكثر واقعية في الشرق الأوسط. انضم إلينا الآن وابدأ قصتك الخاصة في عالم مليء بالمغامرات.</p>
+        <a href="#" class="btn-join">انضم إلينا الآن</a>
+    </section>
+
+    <section class="stats">
+        <div class="stat-item">
+            <h3>+500</h3>
+            <p>لاعب متصل</p>
+        </div>
+        <div class="stat-item">
+            <h3>+10k</h3>
+            <p>عضو في الديسكورد</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>دعم فني مباشر</p>
+        </div>
+    </section>
+
+</body>
+</html>
